@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+
 
 export default {
 	darkMode: ["class"],
@@ -11,9 +13,11 @@ export default {
 		extend: {
 			colors: {
 				dark: {
-					1: '#1C1F2E',
-					2: '#161925',
-				},
+          1: '#1C1F2E',
+          2: '#161925',
+          3: '#252A41',
+          4: '#1E2757',
+        },
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
@@ -62,5 +66,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [tailwindcssAnimate],
 } satisfies Config;
