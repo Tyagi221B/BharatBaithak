@@ -1,30 +1,6 @@
-'use client';
-import { useEffect, useState } from "react";
+import TimeDisplay from "@/components/TimeDisplay";
 
 const Home = () => {
-  const [now, setNow] = useState(new Date());
-
-  useEffect(() => {
-    const updateNow = () => setNow(new Date());
-
-    const delay = 60000 - (now.getSeconds() * 1000 + now.getMilliseconds());
-
-    const timeout = setTimeout(() => {
-      updateNow();
-      const interval = setInterval(updateNow, 60000);
-      return () => clearInterval(interval);
-    }, delay);
-    return () => clearTimeout(timeout);
-  }, [now]);
-
-  const time = now.toLocaleTimeString("en-IN", {
-    hour: "2-digit",
-    minute: "2-digit",
-    timeZone: "Asia/Kolkata",
-  });
-  const date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-    now
-  );
   return (
     <section className="flex size-full flex-col gap-5 text-white">
       <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover">
@@ -33,8 +9,7 @@ const Home = () => {
             Upcoming Meeting at: 12:30 PM
           </h2>
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
-            <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
+            <TimeDisplay />
           </div>
         </div>
       </div>
