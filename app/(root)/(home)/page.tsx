@@ -1,3 +1,4 @@
+import MeetingTypeList from "@/components/MeetingTypeList";
 import TimeDisplay from "@/components/TimeDisplay";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <MeetingTypeList />
     </section>
   );
 };
