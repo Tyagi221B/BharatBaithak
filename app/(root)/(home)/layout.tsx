@@ -6,8 +6,11 @@ import React, { ReactNode } from 'react'
 
 
 export const metadata: Metadata = {
-  title: 'bharatbaithak',
-  description: 'A workspace for your team, powered by Stream Chat and Clerk.',
+  title: "BharatBaithak",
+  description: "A Video Calling App",
+  icons: {
+    icon: "/icons/favicon.svg",
+  }
 };
 
 const HomeLayout = ({ children }: Readonly<{children: ReactNode}>) => {
