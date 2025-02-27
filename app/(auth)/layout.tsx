@@ -24,7 +24,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
         </div>
         <div className="flex items-center space-x-6">
           <button className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors">
-            <Link href={`#signin`}>
+            <Link href={`#signin-section`}>
             Sign In
             </Link>
           </button>
@@ -43,7 +43,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <button className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors font-medium">
-            <Link href={`#signin`}>
+            <Link href={`#signin-section`}>
             Get Started
             </Link>
             
@@ -56,7 +56,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       </div>
 
       {/* Features Section */}
-      <div className="container mx-auto px-6 py-16 bg-gradient-to-br from-orange-300 via-white to-blue-300 rounded-t-3xl shadow-sm">
+      <div className="container mx-auto px-6 py-16 bg-gradient-to-br from-orange-200 via-white to-blue-300 rounded-t-3xl shadow-sm">
         <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Why choose BharatBaithak</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-blue-50 rounded-lg transition-transform hover:scale-105">
@@ -176,7 +176,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
           <h3 className="text-3xl font-bold text-black mb-6">Ready to bring India closer?</h3>
           <p className="text-black mb-8 max-w-2xl mx-auto">Join thousands of businesses, educators, and families who connect daily with BharatBaithak.</p>
           <button className="bg-white text-indigo-600 px-8 py-3 rounded-md hover:bg-indigo-50 transition-colors font-medium">
-            <Link href="#signin">
+            <Link href="#signin-section">
               Get Started for Free
             </Link>
           </button>
@@ -208,7 +208,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 
 
       {/* Auth Content */}
-      <div id="signin" className="w-full">
+      <div id="signin-section" className="w-full">
         {children}
       </div>
     </div>
