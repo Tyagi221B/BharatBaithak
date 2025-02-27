@@ -91,6 +91,122 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
         </div>
       </div>
 
+      {/* How It Works Section */}
+      <div id="howto" className="container mx-auto px-6 py-16">
+        <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">How BharatBaithak Works</h3>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <span className="text-indigo-600 font-bold text-xl">1</span>
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-gray-800">Create Meeting</h4>
+            <p className="text-gray-600">Start a new meeting with just one click, no downloads required.</p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <span className="text-indigo-600 font-bold text-xl">2</span>
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-gray-800">Share Link</h4>
+            <p className="text-gray-600">Invite others by sharing a simple meeting link via any platform.</p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <span className="text-indigo-600 font-bold text-xl">3</span>
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-gray-800">Join In</h4>
+            <p className="text-gray-600">Connect instantly on any device - mobile, tablet, or desktop.</p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <span className="text-indigo-600 font-bold text-xl">4</span>
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-gray-800">Collaborate</h4>
+            <p className="text-gray-600">Share screens, chat, and collaborate in real-time.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="bg-indigo-50 py-16">
+        <div className="container mx-auto px-6">
+          <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">What People Are Saying</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h5 className="font-semibold">Rajesh Kumar</h5>
+                  <p className="text-sm text-gray-500">Small Business Owner, Mumbai</p>
+                </div>
+              </div>
+              <p className="text-gray-600">&quot;BharatBaithak has transformed how I connect with clients across India. The regional language support is a game-changer!&quot;</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h5 className="font-semibold">Priya Sharma</h5>
+                  <p className="text-sm text-gray-500">Teacher, Bangalore</p>
+                </div>
+              </div>
+              <p className="text-gray-600">&quot;My online classes run smoothly even in areas with limited connectivity. The low-bandwidth optimization really works!&quot;</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                <div>
+                  <h5 className="font-semibold">Amit Patel</h5>
+                  <p className="text-sm text-gray-500">IT Manager, Delhi</p>
+                </div>
+              </div>
+              <p className="text-gray-600">&quot;The security features give our team confidence when discussing sensitive projects. It&apos;s reliable, fast, and simple to use.&quot;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="bg-indigo-700 py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h3 className="text-3xl font-bold text-white mb-6">Ready to bring India closer?</h3>
+          <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">Join thousands of businesses, educators, and families who connect daily with BharatBaithak.</p>
+          <button className="bg-white text-indigo-600 px-8 py-3 rounded-md hover:bg-indigo-50 transition-colors font-medium">
+            <Link href="#signin">
+              Get Started for Free
+            </Link>
+          </button>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div id="faq" className="container mx-auto px-6 py-16">
+        <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h3>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="border-b border-gray-200 pb-4">
+            <h4 className="text-xl font-semibold mb-2">Is BharatBaithak really free to use?</h4>
+            <p className="text-gray-600">Yes, our Basic plan is completely free with no hidden charges. It includes all essential features for personal use.</p>
+          </div>
+          <div className="border-b border-gray-200 pb-4">
+            <h4 className="text-xl font-semibold mb-2">How many people can join a BharatBaithak meeting?</h4>
+            <p className="text-gray-600">Our free Basic plan supports up to 100 participants, Business plan supports up to 250, and Enterprise plan supports up to 500 participants.</p>
+          </div>
+          <div className="border-b border-gray-200 pb-4">
+            <h4 className="text-xl font-semibold mb-2">What languages does BharatBaithak support?</h4>
+            <p className="text-gray-600">BharatBaithak supports multiple Indian languages including Hindi, Tamil, Telugu, Bengali, Marathi, Gujarati, Kannada, Malayalam, Punjabi, and more.</p>
+          </div>
+          <div className="border-b border-gray-200 pb-4">
+            <h4 className="text-xl font-semibold mb-2">Do I need to download any software to use BharatBaithak?</h4>
+            <p className="text-gray-600">No, BharatBaithak works directly in your web browser with no downloads required. We also offer mobile apps for Android and iOS for on-the-go access.</p>
+          </div>
+        </div>
+      </div>
+
+
       {/* Auth Content */}
       <div id="signin" className="w-full">
         {children}
