@@ -25,7 +25,7 @@ const Navbar = async () => {
           BharatBaithak
         </p> */}
       </Link>
-      {user && <div className="text-white">{`Welcome ${user?.firstName}`}</div>}{" "}
+      {/* {user && <div className="text-white">{`Welcome ${user?.firstName}`}</div>}{" "} */}
       <div className="flex-between gap-5">
         <MobileNav />
         <SignedIn>
