@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-200">
       {/* Navigation Bar */}
       <nav className="px-6 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
@@ -56,7 +56,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       </div>
 
       {/* Features Section */}
-      <div className="container mx-auto px-6 py-16 bg-white rounded-t-3xl shadow-sm">
+      <div className="container mx-auto px-6 py-16 bg-gradient-to-br from-orange-300 via-white to-blue-300 rounded-t-3xl shadow-sm">
         <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Why choose BharatBaithak</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-blue-50 rounded-lg transition-transform hover:scale-105">
@@ -171,10 +171,10 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-indigo-700 py-16">
+      <div className="bg-gradient-to-br from-green-200 via-white to-blue-200 py-16">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold text-white mb-6">Ready to bring India closer?</h3>
-          <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">Join thousands of businesses, educators, and families who connect daily with BharatBaithak.</p>
+          <h3 className="text-3xl font-bold text-black mb-6">Ready to bring India closer?</h3>
+          <p className="text-black mb-8 max-w-2xl mx-auto">Join thousands of businesses, educators, and families who connect daily with BharatBaithak.</p>
           <button className="bg-white text-indigo-600 px-8 py-3 rounded-md hover:bg-indigo-50 transition-colors font-medium">
             <Link href="#signin">
               Get Started for Free
@@ -184,7 +184,7 @@ const AuthLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       </div>
 
       {/* FAQ Section */}
-      <div id="faq" className="container mx-auto px-6 py-16">
+      <div id="faq" className="container mx-auto px-6 py-16 border border-gray-200 rounded-b-3xl bg-white mt-20">
         <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h3>
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="border-b border-gray-200 pb-4">
