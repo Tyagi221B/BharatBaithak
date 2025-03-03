@@ -38,7 +38,7 @@ export default function Video() {
         playsInline
         poster="/images/video-poster.png"
       >
-        <source src="https://res.cloudinary.com/ecomm2024/video/upload/v1740634459/wgxcuvvtndyo2xbchn2h.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/asmitdemocloud/video/upload/v1740634459/wgxcuvvtndyo2xbchn2h.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
